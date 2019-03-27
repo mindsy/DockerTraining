@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: 'mindsy_frontend'
+    build: .
+    volumes:
+      - "./src:/app/src"
+    ports:
+      - "3000:3000"
